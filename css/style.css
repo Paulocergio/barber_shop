@@ -1,7 +1,7 @@
 :root {
     --color-primary: #917758;
     --color-secundary: #3C2915;
-    --color-primey-light:#F5EEE6;
+    --color-primey-light: #F5EEE6;
 }
 
 * {
@@ -193,32 +193,33 @@ body {
 
 }
 
-.about .experience{
+.about .experience {
     width: 66%;
     color: white;
     margin-left: 7%;
     margin-top: 100px;
 }
 
-.about .experience h2{
+.about .experience h2 {
     font-weight: 400;
     font-size: 40px;
 }
 
-.about .experience h2:after{
+.about .experience h2:after {
     display: block;
     content: '';
     width: 100px;
     height: 3px;
     background-color: #A38F78;
-    margin: 20px 0 ;
+    margin: 20px 0;
 }
 
-.about .experience .text{
+.about .experience .text {
     display: flex;
     justify-content: space-between;
 }
-.about .experience .text p{
+
+.about .experience .text p {
     margin-bottom: 20px;
     font-weight: 100;
     font-size: 17px;
@@ -230,35 +231,130 @@ body {
 *******************************************************
 */
 
-.services{
+.services {
     padding: 100px 0;
     text-align: center;
     background-color: var(--color-primey-light);
-    
+
 }
 
 .services h2 {
     color: var(--color-secundary);
     font-weight: 400;
     font-size: 50px;
+    margin-bottom: 10px;
 }
+
 .services .boxes {
     display: flex;
-    margin-top:50px;
+    margin-top: 50px;
     justify-content: space-between;
-   
+
 }
+
 .services .box {
     border: 3px solid var(--color-primary);
     padding: 50px 40px;
     margin: 30px;
 }
-.services .box h4{
+
+.services .box h4 {
     color: var(--color-secundary);
-    margin-top: 30px ;
+    margin-top: 30px;
 }
-.services .box p{
+
+.services .box p {
     margin-top: 20px;
     font-size: 14px;
     line-height: 25px;
+}
+
+
+/*
+*******************************************************
+                    APPOINTMENT
+*******************************************************
+*/
+
+.appointment {
+    background-color: var(--color-primary);
+    height: 100vh;
+    padding: 100px 0;
+    background-image: url(../images/chair-ic.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 300px;
+    margin-bottom: 10px;
+
+}
+
+.appointment h2 {
+    color: var(--color-primey-light);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-align: center;
+}
+
+.appointment img {
+    margin: 0 auto;
+    display: block;
+
+}
+
+.appointment .personal-date {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.appointment .input-wrapper {
+    width: 100%;
+    margin-right: 50px;
+
+}
+
+.appointment .input-wrapper:last-of-type {
+    margin-right: 0;
+
+}
+
+.appointment form {
+    margin-top: 80px;
+}
+
+.appointment label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 2px;
+    color: var(--color-primey-light)
+}
+
+.appointment .personal-date input,
+.appointment .personal-date select,
+.appointment textarea {
+    padding: 10px 10px;
+    outline: none;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+
+
+}
+
+.appointment textarea {
+    height: 100px;
+}
+
+.appointment button {
+    background-color: var(--color-secundary);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+
 }

@@ -17,6 +17,7 @@ body {
 .container {
     width: 1170px;
     margin: 0 auto;
+   
 }
 
 /*
@@ -25,10 +26,11 @@ body {
 *******************************************************
 */
 .home {
+    position: relative;
+    background-size: cover;
     background-image: url(../images/bg-home.jpg);
     height: 100vh;
-    background-repeat: no-repeat;
-    position: relative;
+    background-attachment: fixed;
 }
 
 .home .header .nav ul {
@@ -357,4 +359,119 @@ body {
     font-weight: bold;
 
 
+}
+
+/*
+*******************************************************
+                    gallery
+*******************************************************
+*/
+
+.gallery {
+    background-color: var(--color-primey-light);
+    padding: 100px 0;
+   
+
+
+}
+
+.gallery h2 {
+    color: var(--color-secundary);
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+
+.gallery img {
+    margin: 0 auto;
+    display: block;
+
+}
+.gallery-wrapper{
+    margin:50px auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 900px;
+    height: 100vh;
+}
+.gallery .gallery-wrapper div{
+    border: 10px solid;
+    color: var(--color-primary);
+    margin: 6px;
+    width: 33%;
+
+
+}
+
+.gallery .gallery-wrapper div img{
+    width: 100%;
+}
+
+/*
+*******************************************************
+                LOCATION
+*******************************************************
+*/
+
+.location{
+   
+    padding: 100px 0;
+    background:url(../images/bg-location.jpg);
+    background-size: cover;
+
+}
+.location .head{
+    background-color: #191919;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.location .head .info{
+    display: flex;
+    align-items: center;
+}
+
+.location .head .info .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-primary) ;
+    padding: 10px;
+    width: 50px;
+    margin-right: 15px;
+    height: 50px;
+    border-radius: 100%;
+
+}
+.location .head .info .text span{
+    display: block;
+    font-size: 13px;
+
+  
+}
+.location .head .info .text span:first-child{
+    color: silver;
+
+}
+.location .head .info .text span:last-child{
+    color: white;
+}
+
+.location .map{
+    width: 100%;
+}
+.location .map iframe{
+    width: 100%;
+}
+.footer{
+    background-color: #191919;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 12px;
 }
